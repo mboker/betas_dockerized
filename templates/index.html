@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../static/css/normalize.min.css">
+        <link rel="stylesheet" href="../static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/ext/tokeninput/styles/token-input.css" />
+        <link rel="stylesheet" type="text/css" href="../static/ext/tokeninput/styles/token-input-mac.css" />
+        <link rel="stylesheet" type="text/css" href="../static/ext/daterangepicker/daterangepicker.min.css" />
+
+        <script src="../static/ext/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <div class="inputs">
+            <div class="row" id="first_row">
+                <div class="date_input">
+                    <span class="date_label">Date Range: </span><input id="date_range"/>
+                </div>
+                <div class="window_input">
+                    <span class="window_label">Rolling Window (Trading Days): </span><input id="window" min="2" type="number" value="30"/>
+                </div>
+            </div>
+            <div class="row" id="second_row">
+                <div class="symbol_input">
+                    <span class="symbols_label">Symbols: </span><input id="symbol_input"/>
+                </div>
+                <div class="button_holder">
+                    <input id="retrieve_button" type="button" value="Get Betas">
+                </div>
+            </div>
+        </div>
+        <div id="chart_div"></div>
+        <div id="loading_div"></div>
+
+        <script>window.jQuery || document.write('<script src="../static/ext/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="../static/ext/tokeninput/src/jquery.tokeninput.js"></script>
+        <script src="../static/ext/amcharts/amcharts.js"></script>
+        <script src="../static/ext/amcharts/serial.js"></script>
+        <script src="../static/ext/moment.min.js"></script>
+        <script src="../static/ext/daterangepicker/jquery.daterangepicker.min.js"></script>
+        <script src="../static/js/main.js"></script>
+    </body>
+</html>
